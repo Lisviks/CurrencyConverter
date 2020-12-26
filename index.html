@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+
+      <div class="app">
+        <form>
+          <div class="select-currency">
+            <select id="currency-one">
+              <option value="eur">EUR</option>
+              <option value="usd">USD</option>
+              <option value="gbp">GBP</option>
+              <option value="jpy">JPY</option>
+              <option value="jpy">CAD</option>
+              <option value="jpy">AUD</option>
+            </select>
+            <span class="convert-direction">></span>
+            <select id="currency-two">
+              <option value="usd">USD</option>
+              <option value="eur">EUR</option>
+              <option value="gbp">GBP</option>
+              <option value="jpy">JPY</option>
+              <option value="jpy">CAD</option>
+              <option value="jpy">AUD</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" />
+          </div>
+          <div class="input-field">
+            <label for="result">Result</label>
+            <input type="number" id="result" disabled />
+          </div>
+          <button type="submit" class="submit-btn">CONVERT</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

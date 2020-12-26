@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+  --primary-color: #448AFF;
+  --secondary-color: #0D47A1;
+  --bg-color: #272727;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  margin: 0;
+}
+
+.container {
+  max-width: 360px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-currency {
+  display: flex;
+  margin-bottom: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-currency select {
+  width: 4.8rem;
+  text-align: center;
+  font-size: 18px;
+  color: var(--secondary-color);
+  background-color: var(--white);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+}
+
+.select-currency .convert-direction {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.input-field label {
+  margin-bottom: 0.5rem;
+  font-size: 18px;
+}
+
+.input-field input, .input-field input:disabled {
+  padding: 0.2rem 0.5rem;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--white);
+  color: var(--secondary-color);
+}
+
+.submit-btn {
+  font-size: 18px;
+  padding: 0.8rem 3rem;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 25px;
+}
